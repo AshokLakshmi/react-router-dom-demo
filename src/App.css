@@ -1,38 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: rgba(128, 128, 128, 0.089);
+}
+
 .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+}
+
+header {
+  background-color: rgba(117, 0, 226, 0.925);
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  padding: 10px;
+
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+ul a {
+  text-decoration: none;
+  color: #080707;
+}
+
+ul a:hover {
+  color: #4b4444;
+}
+
+ul a.active {
+  color: rgb(241, 240, 241);
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.users-data {
+  border-radius: 10px;
+  width: 400px;
+  text-decoration: none;
+  color: #636161;
+  padding: 20px;
+  height: 100px;
+  background-color: #4b444450;
+  transition: 0.8s ease all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users-data span {
+  text-decoration: none;
+  color: #080707;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.users-data:hover {
+  background-color: #8166668f;
+
+}
+
+.single-user {
+  width: 500px;
+  height: 400px;
+  background-color: #4b4444b6;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.single-user span {
+  color: #080707;
+
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #cacacad0;
+  background-color: rgba(0, 0, 255, 0.466);
+  transition: 0.6s ease all;
+}
+
+button:hover {
+  background-color: #08070773;
+  color: #080707;
+}
+
+dt {
+  color: #080707b4;
+  font-weight: 600;
+}
+
+dd {
+  display: block;
+  margin-left: 100px;
 }
