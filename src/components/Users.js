@@ -6,7 +6,7 @@ function Users() {
   const [isLoading, setIsLoadig] = useState(true);
 
   useEffect(() => {
-    fetch("http://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then((resp) => resp.json())
       .then((data) => setUsers(data));
     setIsLoadig(false);

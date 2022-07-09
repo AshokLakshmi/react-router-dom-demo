@@ -10,7 +10,7 @@ function SingleUser() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://jsonplaceholder.typicode.com/users/${params.id}`)
+    fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
       .then((resp) => resp.json())
       .then((data) => setUser(data));
     setIsLoadig(false);
